@@ -1,0 +1,159 @@
+/* Global ------------------------*/
+:root {
+    --title: #1B0043;
+    --text-nav: #240059;
+    --border: #280063;
+    --purpplezin: #7D66A4;
+    --yellowzin: #FFE66C;
+    --yellowzao: #C2A60A;
+    --yellow: #FFCF15;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 93.75%;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background: #F0EDF4;
+}
+
+nav {
+    padding: 2.5rem;
+    margin: auto;
+    width: 1080px;
+    margin: auto;
+    position: relative;
+    background: #E5E5E5;
+    border-radius: 2rem;
+}
+/*Header -------------------------*/
+nav ul {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 1rem;
+}
+
+#botaoAssinante {
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 3.5rem;
+    background: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-nav);
+}
+
+#botaoAssinante:hover {
+    color: var(--yellow);
+    background-color: var(--text-nav);
+    transition: 0.2s;
+}
+
+.botoesNav {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-nav);
+}
+
+.botoesNav:hover {
+    color: var(--yellow);
+    transition: 0.2s;
+}
+
+/*Main ---------------------------*/
+#layout_1 {
+    border: 1px solid green;
+    width: 500px;
+    height: 400px;
+    margin: 2rem auto;
+}
+
+#layout_1 img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Planos ---------------------------*/
+#planos {
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+#planos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    border: 2px solid var(--border);
+    border-radius: 1rem;
+    margin: 0 0.6rem;
+    background-color: #CBCBCC;
+}
+
+#planos li:hover {
+    border-color: var(--yellowzao);
+    opacity: 0.95;
+    transition: 0.15s;
+}
+
+#planos li h2 {
+    background: var(--yellowzin);
+    color: var(--purpplezin);
+    border-radius: 0.89rem 0.89rem 0 0;
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+.preco {
+    background: var(--yellowzin);
+    color: var(--purpplezin);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.infoPlanos {
+    background: #CBCBCC;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 1rem;
+    text-align: left;
+    margin-left: 3.7rem;
+}
+
+.infoPlanos:last-child {
+    border-radius: 0 0 0.89rem 0.89rem;
+}
+
+.buttonAssinar {
+    padding: 0.7rem 1.4rem;
+    font-size: 16px;
+    margin-top: 1rem;
+    margin-bottom: 3px;
+    font-weight: normal;
+    background: #100025;
+    color: var(--yellowzao);
+    border-radius: 0.5rem;
+    border: 0;
+}
+
+.buttonAssinar:hover {
+    background-color: var(--text-nav);
+    color: var(--yellow);
+    transition: 0.2s;
+}
