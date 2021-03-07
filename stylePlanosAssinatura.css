@@ -1,0 +1,106 @@
+/* Global ------------------------*/
+:root {
+    --title: #1B0043;
+    --text-nav: #240059;
+    --border: #280063;
+    --purpplezin: #7D66A4;
+    --yellowzin: #FFE66C;
+    --yellowzao: #C2A60A;
+    --yellow: #FFCF15;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 93.75%;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background: #F0EDF4;
+}
+
+nav {
+    padding: 2.5rem;
+    width: 1080px;
+    margin: auto;
+    position: relative;
+    background: #E5E5E5;
+    border-radius: 2rem;
+}
+/*Header -------------------------*/
+nav ul {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 1rem;
+}
+
+#botaoAssinante {
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 3.5rem;
+    background: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-nav);
+    text-decoration: none;
+    cursor: default;
+}
+
+#botaoAssinante:hover {
+    color: var(--yellow);
+    background-color: var(--text-nav);
+    transition: 0.2s;
+}
+
+.botoesNav {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-nav);
+    cursor: default;
+}
+
+.botoesNav:hover {
+    color: var(--yellow);
+    transition: 0.2s;
+}
+
+/*Main -------------------------*/
+main {
+    width: 940px;
+    margin: auto;
+}
+/*Form -------------------------*/
+form {
+    border: 1px solid red;
+}
+
+form section {
+    margin-top: 1rem;
+}
+
+form section label {
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 1rem;
+    border: 1px solid blue;
+}
+
+form section input {
+    display: block;
+    margin-top: 0.3rem;
+    width: 400px;
+    padding: 0.26rem;
+    font-size: 14px;
+}

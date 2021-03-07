@@ -26,7 +26,6 @@ body {
 
 nav {
     padding: 2.5rem;
-    margin: auto;
     width: 1080px;
     margin: auto;
     position: relative;
@@ -54,6 +53,8 @@ nav ul li {
     font-size: 18px;
     font-weight: 400;
     color: var(--text-nav);
+    text-decoration: none;
+    cursor: default;
 }
 
 #botaoAssinante:hover {
@@ -67,6 +68,7 @@ nav ul li {
     font-size: 18px;
     font-weight: 400;
     color: var(--text-nav);
+    cursor: default;
 }
 
 .botoesNav:hover {
@@ -113,7 +115,7 @@ nav ul li {
 }
 
 #planos li h2 {
-    background: var(--yellowzin);
+    background: var(--yellow);
     color: var(--purpplezin);
     border-radius: 0.89rem 0.89rem 0 0;
     font-size: 34px;
@@ -121,7 +123,7 @@ nav ul li {
 }
 
 .preco {
-    background: var(--yellowzin);
+    background: var(--yellow);
     color: var(--purpplezin);
     font-weight: bold;
     font-size: 20px;
@@ -143,6 +145,7 @@ nav ul li {
 .buttonAssinar {
     padding: 0.7rem 1.4rem;
     font-size: 16px;
+    display: inline-block;
     margin-top: 1rem;
     margin-bottom: 3px;
     font-weight: normal;
@@ -150,10 +153,80 @@ nav ul li {
     color: var(--yellowzao);
     border-radius: 0.5rem;
     border: 0;
+    text-decoration: none;
+    cursor: default;
 }
 
 .buttonAssinar:hover {
     background-color: var(--text-nav);
     color: var(--yellow);
     transition: 0.2s;
+}
+
+/*Footer ---------------------------*/
+footer {
+    background-color: #857802;
+    display: flex;
+    margin: 1rem auto 0;
+    padding: 2rem;
+    position: relative;
+    width: 1080px;
+    border-radius: 2rem;
+}
+
+footer section:first-child {
+    width: 20%;
+}
+
+footer section div {
+    height: 100%;
+    text-align: center;
+}
+
+footer section div img {
+    width: 80%;
+    margin: 1.3rem auto 0;
+}
+
+footer section div p {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--title);
+}
+
+footer section:last-child {
+    width: 80%;
+}
+
+footer section table {
+    align-items: center;
+    border-spacing: 2rem 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+footer section table tr th {
+    width: 30%;
+    font-size: larger;
+    font-weight: bolder;
+    color: #100025;
+    text-align: center;
+    margin: auto;
+}
+footer section table tr td {
+    width: 30%;
+    font-size:smaller;
+    font-weight: normal;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #474749;
+    cursor: default;
+}
+
+footer a:hover {
+    color: var(--text-nav);
+    transition: .4s;
 }
